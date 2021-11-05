@@ -106,19 +106,3 @@ function displayList() {
     }
     document.getElementById("list").innerHTML = listContent;
 }
-
-function deleteBook(button){
-    var row = button.parentNode;
-    var date = row.firstChild.nextSibling.innerHTML;
-    var author = row.firstChild.nextSibling.nextSibling.innerHTML;
-    var title = row.firstChild.nextSibling.nextSibling.nextSibling.innerHTML;
-
-    for(var i = 0; i < bookMtgList.length; i++){
-        if(bookMtgList[i].date.toDateString() == date && bookMtgList[i].author == author && bookMtgList[i].title == title){
-            bookMtgList.splice(i, 1);
-            break;
-        }
-    }
-
-    displayList();
-}
