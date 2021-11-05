@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point</title>
+    <script type="text/javascript" src="js/point.js"></script>
+</head>
+<body>
+    <h1>Rastreador de Puntos</h1>
+
+    <p>Haz click con el mouse en cualquier lugar de esta pahina para capturar la ubicación. Despues de haber capturado 2 ubicaciones, has click en el botón para mostrar la separación en pixeles</p>
+
+    Punto 1: <span id="pt1"></span>
+    <br>
+    Punto 2: <span id="pt2"></span>
+    <br><br>
+
+    <input type="button" id="btn" name="btn" value="Calcular Distancia" onclick="mostrarDistancia(event)">
+    <br><br>
+
+    <div id="mensaje"></div>
+</body>
+
+</html>

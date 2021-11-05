@@ -1,0 +1,37 @@
+table caption{
+    font-size: larger;
+}
+
+table th{
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+table tr{
+    text-align: center;
+    height: 40px;
+}
+
+table td {
+    width: 60px;
+    border-top: 2px solid black; 
+  }
+
+.faint-txt{
+    color: grey;
+}
+
+.normal-txt{
+    color: black;
+}
+
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+body{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}

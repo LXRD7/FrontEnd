@@ -1,0 +1,42 @@
+h1, h2, h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive;
+    color: darkolivegreen;
+}
+
+h1{
+    font-variant: small-caps;
+}
+.table {
+    display: table;
+    border-spacing: 10px 4px;
+}
+.row {
+    display: table-row;
+}
+.row > * {
+    display: table-cell;
+}
+
+.row > :first-child {
+    text-align: right;
+}
+
+body{
+    display: flex;
+    align-items: flex-start;
+    background-color:oldlace;
+}
+
+img{
+    margin: 20px 0 0 20px;
+}
+#error, #mgtHeader{
+    display: none;
+}
+#error{
+    color: red;
+    margin-bottom: 20px;
+}
+#mtgHeader{
+    color: indigo;
+}

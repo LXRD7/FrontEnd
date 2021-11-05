@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hola Mundo</title>
+  </head>
+  <body>
+    <h2>Ingresa tu nombre y appellido y presiona el botón</h2>
+    <form>
+      <label for="nombew">Nombre: </label>
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        autofocus
+        onchange="this.form.elements['app'].disabled=false"
+      />
+      <br />
+      <label for="app">Apellido Paterno</label>
+      <input type="text" name="app" id="app" disabled />
+      <br /><br />
+      <button type="button" onclick="generarCorreo(this.form)">
+        Generar correo
+      </button>
+    </form>
+
+    <div id="correo"></div>
+
+    <br /><br /><br />
+
+    <img
+      src="img/homero.jpg"
+      width="200px"
+      onmouseover="this.src='img/cara.jpg'"
+      onmouseout="this.src='img/homero.jpg'"
+    />
+
+    <br /><br /><br /><br />
+    <div id="mensaje">Presiona el boton para ver unn mensaje!!</div>
+    <button type="button" onclick="saludo()">Presiona!!</button>
+
+    <script type="text/javascript" src="js/inicio.js"></script>
+  </body>
+</html>

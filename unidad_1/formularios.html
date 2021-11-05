@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="estilos/formulario.css" />
+  </head>
+  <body>
+    <img src="imagenes/imagen.png" alt="imagen" width="200px" />
+
+    <form
+      method="GET"
+      action=""
+      enctype="multipart/form-data"
+    >
+    <fieldset>
+        <Legend>Tipos de Inputs</Legend>
+      <div class="mt-10">
+        <label for="nombre">Campo de texto: </label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Escribe tu nombre"
+          autocomplete="name"
+          autofocus
+          value="Lisandro"
+          size="50"
+          minlength="10"
+          maxlength="50"
+        />
+        <!--disabled readonly-->
+      </div>
+
+      <div class="mt-10">
+        <label for="numero">Número: </label>
+        <input
+          type="number"
+          name="numero"
+          id="numero"
+          autocomplete="off"
+          step=".5"
+          min="0"
+          max="10"
+        />
+      </div>
+
+      <div class="mt-10">
+        <label for="pass">Contraseña: </label>
+        <input type="password" name="pass" id="pass" required/>
+      </div>
+
+      <div class="mt-10">
+        <label for="fecha">Fecha: </label>
+        <input type="date" name="fecha" id="fecha" required/>
+      </div>
+
+      <div class="mt-10">
+          <label for="color">Color: </label>
+          <input type="color" name="color" id="color">
+      </div>
+
+      <div class="mt-10">
+          <input type="checkbox" name="terminos" id="terminos">
+          <label for="terminos">Acepto los terminos y condiciones</label>
+      </div>
+
+      <div class="mt-10">
+          <fieldset>
+              <Legend>Sexo</Legend>
+              <input type="radio" name="sexo" id="femenino" checked value="F" required>
+          <label for="femenino">Femenino</label>
+
+          <input type="radio" name="sexo" id="masculino" value="M">
+          <label for="femenino">Masculino</label>
+          </fieldset>
+      </div>
+
+      <div class="mt-10">
+          <label for="imagen">Archivo</label>
+          <input type="file" name="imagen" id="imagen" accept=".png">
+      </div>
+
+      <div class="mt-10">
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo" required autocomplete="email">
+      </div>
+
+      <div class="mt-10">
+          <label>Oculto</label>
+          <input type="hidden" name="oculto" id="oculto" value="1234">
+      </div>
+
+      <div class="">
+          <label for="buscar">Buscar</label>
+          <input type="search" name="buscar buscar" id="">
+      </div>
+
+      <div class="mt-10">
+          <label for="semana">Semana</label>
+          <input type="week" name="semana" id="semana">
+      </div>
+
+      <div class="mt-10">
+          <label for="fecha-hora">Fecha-Hora</label>
+          <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+      </div>
+
+      <div class="mt-10">
+          <label for="hora">Hora</label>
+          <input type="time" name="hora" id="hora">
+      </div>
+
+      <div class="mt-10">
+          <button type="button">Aceptar</button>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+      </div>
+
+    </fieldset>
+    </form>
+
+    <form oninput="out1.value=parseInt(in1.value)+parseInt(in2.value)" id="form1" name="1">
+        <fieldset>
+            <legend>Ejemplo</legend>
+            <div>
+                <input type="number" name="in1" id="in1" value="0">
+            </div>
+            +
+            <div>
+                <input type="number" name="in2" id="in2" value="0">
+            </div>
+        </fieldset>
+    </form>
+
+    <output name="out1" form="form1"></output>
+
+    <div class="mt-10">
+        <select id="comida" name="comida">
+            <option>.:Seleccione:.</option>
+            <optgroup label="Frutas">
+                <option>Uvas</option>
+                <option>Sandia</option>
+                <option>Manzanas</option>
+            </optgroup>
+            <optgroup label="Verduras">
+            <optgroup label="Verduras">
+            <optgroup label="Verduras">
+                <option>Zanahoria</option>
+                <option>Chayote</option>
+                <option>Calabaza</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div class="mt-10">
+        <label for="idiomas">Idioma</label>
+        <input type="search" list="lista_idiomas" name="idiomas" id="idiomas">
+        <datalist id="lista_idiomas">
+            <option>Español</option>
+            <option>Ingles</option>
+            <option>Frances</option>
+        </datalist>
+    </div>
+  </body>
+</html>

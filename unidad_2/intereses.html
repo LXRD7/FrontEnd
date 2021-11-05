@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intereses</title>
+    <link rel="stylesheet" type="text/css" href="css/intereses.css">
+    <script type="text/javascript" src="js/intereses.js"></script>
+</head>
+<body>
+    <h2>Calculadora de intereses</h2>
+
+    <form class="table" id="input">
+        <div class="row">
+            <label for="deposito">Deposito inicial: </label>
+            <input type="number" min="1" max="9999" step="1" required name="deposito" id="deposito">
+        </div>
+
+        <div class="row">
+            <label for="tasa">Tasa anual de interés: </label>
+            <input type="number" min="0" max="100" step=".1" required name="tasa" id="tasa">
+            <span>&nbsp;%</span>
+        </div>
+
+        <div class="row">
+            <label for="anio">No. años: </label>
+            <input type="number" min="1" max="20" step="1" required name="anio" id="anio">
+        </div>
+    </form>
+
+    <button type="button" form="input" onclick="generarTabla(this.form);">Generar Intereses</button>
+
+    <br><br>
+    <div id="resultado"></div>
+</body>
+</html>

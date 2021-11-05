@@ -1,0 +1,19 @@
+
+    body{
+        background-color: coral;
+    }
+
+    #titulo{
+        color: white;
+    }
+
+    .texto{
+        color: darkgreen;
+        font-size: 25px;
+    }
+    table{
+        table-layout: fixed;
+        width: 300px;
+        border-collapse: separate;
+        caption-side: bottom;
+    }
